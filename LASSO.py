@@ -52,7 +52,7 @@ print(X_train.shape,y_train.shape,X_test.shape,y_test.shape)
 loss_his,params,grads = l1_train(X_train,y_train,0.01,300)
 # print(params)
 
-#基于sklearn 的模型实现
+
 from sklearn import linear_model
 sk_LASSO = linear_model.Lasso(alpha=0.1)
 sk_LASSO.fit(X_train,y_train)
@@ -60,4 +60,5 @@ sk_LASSO.fit(X_train,y_train)
 print(f"sklearn LASSO intercept: {sk_LASSO.intercept_}")
 print(f"sklearn LASSO coefficients: \n {sk_LASSO.coef_}")
 print(f"\nsklearn LASSO number of iterations: {sk_LASSO.n_iter_}")
+## git 账户使用
 
